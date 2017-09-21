@@ -28,7 +28,7 @@ import com.google.firebase.auth.GoogleAuthProvider;
 public class KayitlarActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener{
 
 
-    ImageView ımageface,ımagetwitter,ımagegmail,ımageViewlogo;
+    ImageView ımagegmail,ımageViewlogo;
     Button buttonyenihesap,buttonvarhesap;
 
     //google
@@ -47,8 +47,7 @@ public class KayitlarActivity extends AppCompatActivity implements GoogleApiClie
         setContentView(R.layout.activity_kayitlar);
 
         ımageViewlogo = (ImageView) findViewById(R.id.imageViewlogo);
-        ımageface = (ImageView) findViewById(R.id.facebook);
-        ımagetwitter = (ImageView) findViewById(R.id.twitter);
+
         ımagegmail = (ImageView) findViewById(R.id.gmail);
         buttonyenihesap = (Button) findViewById(R.id.buttonyenihesap);
         buttonvarhesap = (Button) findViewById(R.id.buttonvarhesap);

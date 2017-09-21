@@ -1,7 +1,9 @@
 package com.example.asus.bendevarm.Fragment;
 
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -28,7 +30,7 @@ public class EtkinlikFragment extends BaseFragment {
     FirebaseAuth mAuth;
     ImageView imageViewKurulusFoto;
     TextView textViewKurulusAdi,textViewEtkinlikAdi,textViewDestekSayısı,textViewTarih,textViewYer;
-    Button buttonDestekle;
+    Button buttonDestekle, buttonKatil;
 
 
     public EtkinlikFragment() {
@@ -64,6 +66,7 @@ public class EtkinlikFragment extends BaseFragment {
         textViewTarih = (TextView) getActivity().findViewById(R.id.textViewTarih);
         textViewYer = (TextView) getActivity().findViewById(R.id.textViewYer);
         buttonDestekle = (Button) getActivity().findViewById(R.id.buttonDestekle);
+        buttonKatil = (Button) getActivity().findViewById(R.id.buttonKatil);
 
         Glide.with(getActivity()).load(etkinlik.getLogoUrl()).into(imageViewKurulusFoto);
         textViewKurulusAdi.setText(etkinlik.getKurulusAdi());
@@ -71,6 +74,9 @@ public class EtkinlikFragment extends BaseFragment {
         textViewDestekSayısı.setText(etkinlik.getDestekListe().size() + " kez desteklendi.");
         textViewTarih.setText(etkinlik.getTarih());
         textViewYer.setText(etkinlik.getYer());
+
+        buttonKatil.setTextColor(getActivity().getResources().getColor(R.color.colorPrimary));
+        buttonKatil.setBackgroundColor(Color.TRANSPARENT);
 
         destekKontrol();
     }
@@ -99,6 +105,15 @@ public class EtkinlikFragment extends BaseFragment {
                     dRef.setValue(temp);
                 }
                 destekKontrol();
+            }
+        });
+
+        buttonKatil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uriUrl = Uri.parse(etkinlik.getUrl());
+                Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                startActivity(launchBrowser);
             }
         });
     }

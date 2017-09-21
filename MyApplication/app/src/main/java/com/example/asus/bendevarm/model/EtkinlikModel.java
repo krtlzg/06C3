@@ -10,12 +10,12 @@ import java.util.ArrayList;
 public class EtkinlikModel implements Serializable {
 
     int durum;
-    String etkinlikAdi, kurulusAdi, logoUrl, tarih, yer, id;
+    String etkinlikAdi, kurulusAdi, logoUrl, tarih, yer, id, url;
     ArrayList<String> destekListe = new ArrayList<>();
 
     public EtkinlikModel() { }
 
-    public EtkinlikModel(int durum, String etkinlikAdi, String kurulusAdi, String logoUrl, String tarih, String yer, String id, ArrayList<String> destekListe) {
+    public EtkinlikModel(int durum, String etkinlikAdi, String kurulusAdi, String logoUrl, String tarih, String yer, String id, String url, ArrayList<String> destekListe) {
         this.durum = durum;
         this.etkinlikAdi = etkinlikAdi;
         this.kurulusAdi = kurulusAdi;
@@ -24,6 +24,7 @@ public class EtkinlikModel implements Serializable {
         this.yer = yer;
         this.id = id;
         this.destekListe = destekListe;
+        this.url = url;
     }
 
     public int getDurum() {
@@ -88,5 +89,13 @@ public class EtkinlikModel implements Serializable {
 
     public void setDestekListe(ArrayList<String> destekListe) {
         this.destekListe = destekListe;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

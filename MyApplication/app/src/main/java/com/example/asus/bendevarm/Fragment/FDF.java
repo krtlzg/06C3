@@ -3,6 +3,8 @@ package com.example.asus.bendevarm.Fragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
+import com.example.asus.bendevarm.activity.PaylasFragment;
+
 /**
  * Created by asus on 10.9.2017.
  */
@@ -16,6 +18,9 @@ public class FDF {
     public static final String ETKINLIK = "fragment_etkinlik";
     public static final String HAKKKIMIZDA = "fragment_hakkimizda";
     public static  final String SPONSORLAR = "fragment_sponsor";
+    public static final String PAYLAS ="fragment_paylas";
+    public static final String MESAJ ="fragment_mesaj";
+    public static final String KETKİNLİK ="fragment_ketkinlik";
 
 
     private FDF() { }
@@ -50,6 +55,15 @@ public class FDF {
         }
         else if(fragment.equals(SPONSORLAR)){
             return new SponsorFragment();
+        }
+        else if(fragment.equals(PAYLAS)){
+            return new PaylasFragment();
+        }
+        else if(fragment.equals(MESAJ)){
+            return new MesajFragment();
+        }
+        else if(fragment.equals(KETKİNLİK)){
+            return new KEtkinlikFragment();
         }
 
         else {

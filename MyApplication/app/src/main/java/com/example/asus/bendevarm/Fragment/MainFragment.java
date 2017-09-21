@@ -68,7 +68,7 @@ public class MainFragment extends BaseFragment {
         temp.add("");
 
         etkinlikList = new ArrayList<>();
-        etkinlikList.add(new EtkinlikModel(0, "", "", "", "", "", "", temp));
+        etkinlikList.add(new EtkinlikModel(0, "", "", "", "", "", "", "", temp));
 
         lvEtkinlik = (ListView) getActivity().findViewById(R.id.listviewetkinlik);
         adapter = new CustomAdapter(getActivity(), etkinlikList, getContext(), fAuth);
@@ -151,10 +151,11 @@ public class MainFragment extends BaseFragment {
             dialogGoster();
             return true;
         }
+        /*
         if (id == R.id.app_bar_bul) {
             return true;
         }
-
+*/
         return super.onOptionsItemSelected(item);
     }
 

@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="com.example.asus.bendevarm.Kurumsal.KurumsalKayitlarActivity"
     android:orientation="vertical"
     android:background="@color/background"
-    tools:context="com.example.asus.bendevarm.activity.KayitlarActivity"
     android:weightSum="1">
+    >
 
     <ImageView
         android:id="@+id/imageViewlogo"
@@ -19,44 +20,25 @@
         android:layout_weight="0.05" />
 
     <Button
-        android:id="@+id/buttonyenihesap"
+        android:id="@+id/buttonyenihesapkurumsal"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
+        android:layout_margin="30dp"
         android:padding="10dp"
         android:text="Yeni Hesap oluştur"
         android:textStyle="italic" />
 
-
     <Button
-        android:id="@+id/buttonvarhesap"
+        android:id="@+id/buttonvarhesapkurumsal"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:padding="10dp"
-        android:text="Ben Zaten GÖnüllüyüm"
+        android:text="Üye Girişi"
         android:textStyle="italic" />
-
-
-
-
-        <ImageView
-            android:id="@+id/gmail"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:padding="10dp"
-            android:clickable="true"
-            android:layout_gravity="center_horizontal"
-            app:srcCompat="@drawable/ic_google" />
-
-
-
-
-
 
 </LinearLayout>

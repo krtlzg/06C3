@@ -17,11 +17,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.asus.bendevarm.Fragment.FDF;
 import com.example.asus.bendevarm.Fragment.IFListener;
 import com.example.asus.bendevarm.R;
+import com.example.asus.bendevarm.model.KullaniciModel;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Stack;
 
@@ -29,7 +38,13 @@ public class ListeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener , IFListener{
 
     private FirebaseAuth fAuth;
+    private FirebaseDatabase fDatabase;
+    private DatabaseReference dReference;
+    private KullaniciModel kullanici;
     private FloatingActionButton fab;
+    private ImageView imageViewNavPP;
+    private TextView textViewNavName;
+    private View headerView;
 
     private DrawerLayout drawer;
 
@@ -41,6 +56,8 @@ public class ListeActivity extends AppCompatActivity
         setContentView(R.layout.activity_liste);
 
         fAuth = FirebaseAuth.getInstance();
+        fDatabase = FirebaseDatabase.getInstance();
+        dReference = fDatabase.getReference("Kullanici/" + fAuth.getCurrentUser().getUid());
 
         fragmentList = new Stack<>();
 
@@ -73,8 +90,26 @@ public class ListeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        headerView = navigationView.getHeaderView(0);
+        imageViewNavPP = (ImageView) headerView.findViewById(R.id.imageViewNavPP);
+        textViewNavName = (TextView) headerView.findViewById(R.id.textViewNavName);
+
         onFragmentChange(FDF.MAIN);
         setTitle("Anasayfa");
+
+        dReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                kullanici = dataSnapshot.getValue(KullaniciModel.class);
+                Glide.with(ListeActivity.this).load(kullanici.getFotourl()).into(imageViewNavPP);
+                textViewNavName.setText(kullanici.getAd() + " " + kullanici.getSoyad());
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 
     @Override
@@ -124,8 +159,10 @@ public class ListeActivity extends AppCompatActivity
         if (id == R.id.nav_hesabım) {
             onFragmentChange(FDF.HESABIM);
         } else if (id == R.id.nav_etkinlikler) {
+            onFragmentChange(FDF.KETKİNLİK);
 
         } else if (id == R.id.nav_mesajkutum) {
+            onFragmentChange(FDF.MESAJ);
 
         } else if (id == R.id.nav_hakkımızda) {
             onFragmentChange(FDF.HAKKKIMIZDA);
@@ -134,6 +171,7 @@ public class ListeActivity extends AppCompatActivity
             onFragmentChange(FDF.SPONSORLAR);
 
         } else if (id == R.id.nav_paylaş) {
+            onFragmentChange(FDF.PAYLAS);
 
         } else if (id == R.id.nav_anasayfa) {
             onFragmentChange(FDF.MAIN);

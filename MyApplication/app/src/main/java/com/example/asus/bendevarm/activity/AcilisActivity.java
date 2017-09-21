@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.example.asus.bendevarm.Kurumsal.KurumsalKayitlarActivity;
 import com.example.asus.bendevarm.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -47,5 +48,14 @@ public class AcilisActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        buttonkurumsal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (getApplicationContext(), KurumsalKayitlarActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

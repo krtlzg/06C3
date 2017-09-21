@@ -7,6 +7,7 @@
         android:orderInCategory="101"
         android:title="Filtrele"
         app:actionLayout="@layout/switch_item" />
+    <!--
     <item
         android:id="@+id/app_bar_bul"
         android:actionViewClass="android.widget.SearchView"
@@ -14,5 +15,5 @@
 
         android:icon="@drawable/ic_search_black_24dp"
         android:orderInCategory="102"
-        android:title="Bul" />
+        android:title="Bul" /> -->
 </menu>
