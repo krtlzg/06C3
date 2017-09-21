@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Ben de Varım !</string>
+
+    <string-array name="turkey_city_list">
+        <item>Adana</item>
+        <item>Adıyaman</item>
+        <item>Afyon</item>
+        <item>Ağrı</item>
+        <item>Amasya</item>
+        <item>Ankara</item>
+        <item>Antalya</item>
+        <item>Artvin</item>
+        <item>Aydın</item>
+        <item>Balıkesir</item>
+        <item>Bilecik</item>
+        <item>Bingöl</item>
+        <item>Bitlis</item>
+        <item>Bolu</item>
+        <item>Burdur</item>
+        <item>Bursa</item>
+        <item>Çanakkale</item>
+        <item>Çankırı</item>
+        <item>Çorum</item>
+        <item>Denizli</item>
+        <item>Diyarbakır</item>
+        <item>Edirne</item>
+        <item>Elazığ</item>
+        <item>Erzincan</item>
+        <item>Erzurum</item>
+        <item>Eskişehir</item>
+        <item>Gaziantep</item>
+        <item>Giresun</item>
+        <item>Gümüşhane</item>
+        <item>Hakkari</item>
+        <item>Hatay</item>
+        <item>Isparta</item>
+        <item>İçel (Mersin)</item>
+        <item>İstanbul</item>
+        <item>İzmir</item>
+        <item>Kars</item>
+        <item>Kastamonu</item>
+        <item>Kayseri</item>
+        <item>Kırklareli</item>
+        <item>Kırşehir</item>
+        <item>Kocaeli</item>
+        <item>Konya</item>
+        <item>Kütahya</item>
+        <item>Malatya</item>
+        <item>Manisa</item>
+        <item>K.maraş</item>
+        <item>Mardin</item>
+        <item>Muğla</item>
+        <item>Muş</item>
+        <item>Nevşehir</item>
+        <item>Niğde</item>
+        <item>Ordu</item>
+        <item>Rize</item>
+        <item>Sakarya</item>
+        <item>Samsun</item>
+        <item>Siirt</item>
+        <item>Sinop</item>
+        <item>Sivas</item>
+        <item>Tekirdağ</item>
+        <item>Tokat</item>
+        <item>Trabzon</item>
+        <item>Tunceli</item>
+        <item>Şanlıurfa</item>
+        <item>Uşak</item>
+        <item>Van</item>
+        <item>Yozgat</item>
+        <item>Zonguldak</item>
+        <item>Aksaray</item>
+        <item>Bayburt</item>
+        <item>Karaman</item>
+        <item>Kırıkkale</item>
+        <item>Batman</item>
+        <item>Şırnak</item>
+        <item>Bartın</item>
+        <item>Ardahan</item>
+        <item>Iğdır</item>
+        <item>Yalova</item>
+        <item>Karabük</item>
+        <item>Kilis</item>
+        <item>Osmaniye</item>
+        <item>Düzce</item>
+    </string-array>
+    <string name="title_activity_liste">ListeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">id gir</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_hesabım">Hesabım</string>
+    <string name="nav_mesajkutum">Mesaj Kutum</string>
+    <string name="nav_etkinlikler">Katıldığım Etkinlikler</string>
+    <string name="nav_paylaş">Paylaş</string>
+    <string name="nav_sponsorlar">Sponsorlarımız</string>
+    <string name="nav_hakkımızda">Hakkımızda</string>
+
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Hesabım</item>
+        <item>Mesaj Kutum</item>
+        <item>Katıldığım Etkinlikler</item>
+        <item>Paylaş</item>
+        <item>Sponsorlarımız</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Fragmentte kullandığım yazılar -->
+
+    <string name="hakkimizda">Ben de Varım, sivil toplum kuruluşları ile iyiliğe gönül vermiş gönüllüler arasında
+    köprü görevi görecek bir haberleşme platformudur.Üç üniversite öğrencisi kadın girişimci
+    tarafından 2017 yılında kurulan bu platformun amacı;gönüllülerin katılmak istedikleri uygun etkinlik ve projelere
+    kolayca ulaşmalarını sağlamak ve katıldıkları etkinlikleri belgelemektir. Aynı zamanda sivil toplum kuruluşlarının
+    oluşturdukları etkinlik ve projelerde görev alacak nitelikli gönüllüleri kısa bir süre zarfında
+    bulmayı hedeflemektedir.</string>
+
+    <string name="sponsorlar">Bu projede bizlerden desteklerini esirgemeyen kuruluşlara
+        teşekkür ederiz</string>
+
+</resources>

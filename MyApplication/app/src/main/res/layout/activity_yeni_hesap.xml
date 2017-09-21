@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.example.asus.bendevarm.activity.YeniHesapActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editTextad"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_gravity="center_horizontal"
+        android:hint="Adınız" />
+
+    <EditText
+        android:id="@+id/editTextsoyad"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Soyadınız"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextemail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="E-posta"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextşifre"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Şifreniz"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextcep"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Cep Numaranız"
+        android:layout_gravity="center_horizontal"
+        android:inputType="phone"
+        android:maxLength="14"
+
+
+       />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewil"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:hint="İl" />
+
+        <Spinner
+            android:id="@+id/spinneril"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:minWidth="@dimen/nav_header_vertical_spacing" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttongönüllüol"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="gönüllü ol"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+
+</LinearLayout>

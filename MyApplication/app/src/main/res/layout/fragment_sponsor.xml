@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.example.asus.bendevarm.Fragment.SponsorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textViewsponsor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/sponsorlar"
+        android:textAlignment="center"
+        android:textColor="@color/yazı"
+        android:textStyle="bold|italic"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp" />
+
+    <ImageView
+        android:id="@+id/imageViewlogo1"
+        android:layout_width="241dp"
+        android:layout_height="142dp"
+
+        app:srcCompat="@drawable/turkcell_logo"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageViewlogo2"
+        android:layout_width="192dp"
+        android:layout_height="163dp"
+        app:srcCompat="@drawable/logotr"
+        android:layout_below="@+id/imageViewlogo1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+
+
+
+</RelativeLayout>

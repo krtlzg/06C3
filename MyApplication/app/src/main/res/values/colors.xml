@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- tema renkleri-->
+    <color name="colorPrimary">#a1c361</color>
+    <color name="colorPrimaryDark">#a1c361</color>
+    <color name="colorAccent">#a1c361</color>
+
+    <color name="background">#d2dce6</color>
+    <color name="butonrengi">#96ebe5</color>
+    <color name ="cardview">#FFF6F7F7</color>
+    <color name="yazı">#FF043E64</color>
+
+    <!-- FFD1D8DF  cardview belki bu renk de olabilir kızlara sor-->
+
+    <!--durum renkleri-->
+    <color name="acilDurum">#cf4949</color>
+    <color name="oncelikliDurum">#95db84</color>
+    <color name="normalDurum">#e8e86a</color>
+</resources>

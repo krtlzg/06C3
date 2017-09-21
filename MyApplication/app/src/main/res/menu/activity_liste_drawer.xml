@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_anasayfa"
+            android:icon="@drawable/ic_home"
+            android:title="Anasayfa"
+            android:checked="true"/>
+
+        <item
+            android:id="@+id/nav_hesabım"
+            android:icon="@drawable/ic_account_circle"
+            android:title="Hesabım" />
+        <item
+            android:id="@+id/nav_mesajkutum"
+            android:icon="@drawable/ic_mail"
+            android:title="Mesaj Kutum" />
+        <item
+            android:id="@+id/nav_etkinlikler"
+            android:icon="@drawable/ic_check_circle_o"
+            android:title="Katıldığım Etkinlikler" />
+        <item
+            android:id="@+id/nav_paylaş"
+            android:icon="@drawable/ic_share_alt"
+            android:title="Paylaş" />
+        <item
+            android:id="@+id/nav_sponsorlar"
+            android:icon="@drawable/ic_star"
+            android:title="Sponsorlarımız" />
+        <item
+            android:id="@+id/nav_hakkımızda"
+            android:icon="@drawable/ic_info_circle"
+            android:title="Hakkımızda" />
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.asus.bendevarm.activity.SplashActivity">
+
+
+    <ImageView
+        android:id="@+id/imgYuzuk"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/imgMelek"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:tint="#304FFE"
+        app:srcCompat="@drawable/ring"/>
+
+    <ImageView
+        android:id="@+id/imgMelek"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="-5dp"
+        android:scaleType="fitXY"
+        android:tint="#304FFE"
+        app:srcCompat="@drawable/angel"/>
+
+    <ImageView
+        android:id="@+id/imgBaslik"
+        android:layout_width="600dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imgMelek"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/baslik"
+        android:tint="#304FFE"
+        />
+
+</RelativeLayout>
