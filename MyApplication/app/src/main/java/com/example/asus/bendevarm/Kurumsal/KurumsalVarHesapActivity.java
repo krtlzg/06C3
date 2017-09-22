@@ -50,7 +50,7 @@ public class KurumsalVarHesapActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if(task.isSuccessful()){
-                            Intent intent = new Intent(getApplicationContext(),ListeActivity.class);
+                            Intent intent = new Intent(getApplicationContext(),EtkinlikActivity.class);
                             startActivity(intent);
                             finish();
                         }

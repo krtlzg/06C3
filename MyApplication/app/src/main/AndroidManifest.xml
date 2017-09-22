@@ -35,7 +35,8 @@
 
         <activity android:name=".Kurumsal.KurumsalKayitlarActivity" />
         <activity android:name=".Kurumsal.KurumsalVarHesapActivity" />
-        <activity android:name=".Kurumsal.KurumsalYeniHesapActivity"></activity>
+        <activity android:name=".Kurumsal.KurumsalYeniHesapActivity" />
+        <activity android:name=".Kurumsal.EtkinlikActivity"></activity>
     </application>
 
 </manifest>

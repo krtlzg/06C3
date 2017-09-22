@@ -101,7 +101,10 @@ public class ListeActivity extends AppCompatActivity
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 kullanici = dataSnapshot.getValue(KullaniciModel.class);
-                Glide.with(ListeActivity.this).load(kullanici.getFotourl()).into(imageViewNavPP);
+                if  (kullanici.getFotourl() != null)
+                {
+                    Glide.with(ListeActivity.this).load(kullanici.getFotourl()).into(imageViewNavPP);
+                }
                 textViewNavName.setText(kullanici.getAd() + " " + kullanici.getSoyad());
             }
 

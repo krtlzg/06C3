@@ -8,11 +8,11 @@
     <translate
         android:fromYDelta="40"
         android:toYDelta="0"
-        android:duration="1000"/>
+        android:duration="3000"/>
 
     <alpha
         android:fromAlpha="0"
         android:toAlpha="1"
-        android:duration="975"
+        android:duration="2975"
         android:interpolator="@android:anim/accelerate_interpolator"/>
 </set>

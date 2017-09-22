@@ -15,7 +15,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.asus.bendevarm.R;
-import com.example.asus.bendevarm.activity.ListeActivity;
 import com.example.asus.bendevarm.model.KurumsalModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -98,7 +97,7 @@ public class KurumsalYeniHesapActivity extends AppCompatActivity {
                             dRef.child(mAuth.getCurrentUser().getUid()).setValue(kurumsalKullanici);
                             editTextClear();
                             Toast.makeText(getApplicationContext(),"Kayıt Başarılı :)",Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(getApplicationContext(),ListeActivity.class);
+                            Intent intent = new Intent(getApplicationContext(),EtkinlikActivity.class);
                             startActivity(intent);
                             finish();
                         }
